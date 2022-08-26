@@ -1,0 +1,272 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background: url("../img/background-filter.png") 0 0 repeat;
+  z-index: 1000;
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.container {
+  max-width: containerWidth40px;
+  width: 100%;
+  padding: 0 20px 0 200px;
+  margin: 0 auto;
+}
+@media (max-width: 1199px) {
+  .container {
+    max-width: containerWidth30px;
+    padding: 0 20px 0 180px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: containerWidth20px;
+    padding: 0 20px 0 155px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 6px;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  background-color: fire-red;
+}
+@media (min-width: 100px) {
+  .btn:hover {
+    background-color: dark-red;
+  }
+}
+.btn::before, .btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 24px;
+  height: 100%;
+  background-color: dark-red;
+  transition: all 0.3s ease;
+  -webkit-clip-path: url(#btn-decoration);
+          clip-path: url(#btn-decoration);
+}
+.btn::before {
+  left: 0;
+}
+.btn::after {
+  right: 0;
+  transform: scale(-1, 1);
+}
+@media (min-width: 991px) {
+  .btn:hover::before, .btn:hover::after {
+    background-color: fire-red;
+  }
+}
+.btn--big {
+  padding: 18px 23px;
+}
+.btn--small {
+  padding: 15px 40px;
+}
+
+@media (max-width: 767px) {
+  .section-content {
+    padding-left: 30px;
+  }
+}
+
+.section-heading {
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 70px;
+  line-height: 1.125;
+  color: black;
+  font-weight: 400;
+  position: relative;
+  display: block;
+  margin-top: 25px;
+}
+@media (max-width: 1400px) {
+  .section-heading {
+    font-size: 60px;
+    margin-top: 20px;
+  }
+}
+@media (max-width: 1199px) {
+  .section-heading {
+    font-size: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .section-heading {
+    font-size: 45px;
+  }
+}
+@media (max-width: 767px) {
+  .section-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 479px) {
+  .section-heading {
+    font-size: 34px;
+  }
+}
+.section-heading::before {
+  content: "";
+  position: absolute;
+  left: -45px;
+  top: calc(0.5em - 15px);
+  display: block;
+  background: url("../img/icons/section-sign.svg") 0 0/contain;
+  width: 30px;
+  height: 31px;
+}
+@media (max-width: 767px) {
+  .section-heading::before {
+    left: -30px;
+    top: calc(0.5em - 11px);
+    width: 22px;
+    height: 23px;
+  }
+}
+.section-heading .underline {
+  display: inline-block;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.section-heading .underline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+}
+
+.section-heading-info {
+  font-family: "Madelyn Fill", sans-serif;
+  font-size: 46px;
+  line-height: 1;
+  color: fire-red;
+  font-weight: 300;
+}
+@media (max-width: 991px) {
+  .section-heading-info {
+    font-size: 34px;
+  }
+}
+
+.section-text {
+  font-family: "Gilroy", sans-serif;
+  font-size: 18px;
+  line-height: 1.5555555556;
+  font-weight: 600;
+  color: black;
+}
+@media (max-width: 767px) {
+  .section-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.img-bg-pattern {
+  position: relative;
+  background: #ebe0d3;
+  z-index: 210;
+}
+.img-bg-pattern::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  z-index: 200;
+  background: bg-svg-icon;
+}
+.img-bg-pattern img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 210;
+}
+.img-bg-pattern video {
+  z-index: 210;
+}
+
+div.img-border-white {
+  border: 7px solid white;
+}
+
+.list-item-content {
+  position: relative;
+}
+.list-item-content::before {
+  content: "";
+  position: absolute;
+  left: -38px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 18px;
+  height: 22px;
+  background: url("../img/why-us/advantages-list-item-marker.svg");
+}
+
+span.red {
+  color: fire-red;
+}
+
+label.checkbox {
+  display: inline-block;
+  position: relative;
+  width: 16px;
+  height: 16px;
+}
+label.checkbox input[type=checkbox] {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+label.checkbox input[type=checkbox]:checked + span::before {
+  border: 1px solid transparent;
+  background: #4299e1 url(../img/icons/checkbox-checked.svg) center no-repeat;
+}
+label.checkbox span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  height: 16px;
+  border-radius: 4px;
+  border: 1px solid gray;
+  background-color: #fff;
+}/*# sourceMappingURL=general.css.map */

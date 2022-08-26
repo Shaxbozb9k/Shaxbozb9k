@@ -1,0 +1,219 @@
+.contact-us {
+  padding: 300px 0 110px;
+}
+@media (max-width: 991px) {
+  .contact-us {
+    padding: 140px 0 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us {
+    padding: 100px 0 0 0;
+  }
+}
+.contact-us__container {
+  padding-left: 20px !important;
+}
+.contact-us__body {
+  position: relative;
+}
+.contact-us__content {
+  position: relative;
+  margin-left: 55px;
+  padding: 45px 25px 45px 25px;
+  background: bg-svg-icon;
+}
+@media (max-width: 991px) {
+  .contact-us__content {
+    padding: 45px 15px 70px 15px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 575px) {
+  .contact-us__content {
+    padding: 30px 5px;
+  }
+}
+.contact-us__content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, bg-color-dark 30%, transparent);
+}
+.contact-us__heading {
+  max-width: 50%;
+  margin-top: 0 !important;
+  padding-right: 15px;
+  margin-left: 55px;
+}
+@media (max-width: 991px) {
+  .contact-us__heading {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__heading {
+    margin-left: 40px;
+  }
+}
+.contact-us__form {
+  position: absolute;
+  left: 75%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border: 7px solid white;
+  padding: 35px 40px 40px 35px;
+}
+@media (max-width: 991px) {
+  .contact-us__form {
+    position: relative;
+    top: -40px;
+    left: 50%;
+    display: inline-block;
+    max-width: 500px;
+    transform: translate(-50%, 0);
+  }
+}
+@media (max-width: 767px) {
+  .contact-us__form {
+    padding: 20px 25px 30px 20px;
+  }
+}
+@media (max-width: 576px) {
+  .contact-us__form {
+    top: 20px;
+    padding: 20px 15px 20px 15px;
+  }
+}
+@media (max-width: 479px) {
+  .contact-us__form {
+    padding: 20px 8px 20px 8px;
+  }
+}
+
+.form-contact-us {
+  display: inline-flex;
+  flex-direction: column;
+  background-color: bg-color-dark;
+}
+.form-contact-us__heading {
+  font-family: "Viaoda Libre", sans-serif;
+  font-size: 28px;
+  line-height: 1.0714285714;
+  color: black;
+  font-weight: 400;
+  text-align: center;
+}
+.form-contact-us__content {
+  margin-top: 40px;
+}
+.form-contact-us__input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.form-contact-us__input input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 9px 12px;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: black;
+  font-weight: 600;
+  caret-color: fire-red;
+}
+.form-contact-us__input input:focus {
+  border-bottom: 1px solid black;
+}
+.form-contact-us__input input::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+.form-contact-us__input input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+.form-contact-us__input input::placeholder {
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+.form-contact-us__input-heading {
+  display: inline-block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.1428571429;
+  color: black;
+  font-weight: 600;
+}
+.form-contact-us__input-heading--messanger {
+  color: #4caf50;
+}
+.form-contact-us__messangers {
+  margin: 20px 0;
+}
+.form-contact-us__messangers-list {
+  display: flex;
+}
+.form-contact-us__messangers-list-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 4px;
+  width: 75px;
+  height: 75px;
+}
+.form-contact-us__messangers-list-item:not(:first-child) {
+  margin-left: 10px;
+}
+.form-contact-us__messangers-list-item._active {
+  background-color: white;
+}
+.form-contact-us__messangers-list-item:not(._active) {
+  cursor: pointer;
+}
+.form-contact-us__messangers-list-item input[type=radio] {
+  display: none;
+}
+.form-contact-us__messangers-list-item-icon {
+  width: 34px;
+  min-height: 34px;
+}
+.form-contact-us__messangers-list-item-text {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 2.3333333333;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.form-contact-us__submit {
+  width: 100%;
+  margin: 20px 0;
+}
+.form-contact-us__privacy {
+  font-size: 10px;
+  line-height: 1.6;
+  color: black;
+  font-weight: 600;
+}
+.form-contact-us__privacy .checkbox span::before {
+  margin-top: 0.4em;
+}
+.form-contact-us__privacy-text {
+  margin-left: 5px;
+}
+.form-contact-us__privacy-link {
+  display: inline;
+  color: #0057ff;
+  text-decoration: underline;
+}/*# sourceMappingURL=contact-us.css.map */
