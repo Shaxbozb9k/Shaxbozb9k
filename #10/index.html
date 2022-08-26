@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson 15 Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+<!--        mx-auto ==> margin-left="auto", margin-right="auto"-->
+<!--        my-auto ==> margin-top="auto", margin-bottom="auto"-->
+        <div class="col-4">
+           <div class="card">
+               <div class="card-header">
+                   <h3 class="text-center">Manzara</h3>
+               </div>
+               
+               <div class="card-body">
+<!--                   rounded ==> border-radius: 8px-->
+<!--                   rounded-circle ==> border-radius = "50%"-->
+                   <img class="w-100 img-thumbnail" src="images/programmer-icon-in-flat-style-isolated-on-white-vector-14324659.jpg" alt="Error">
+               </div>
+
+               <div class="card-footer d-flex justify-content-between align-items-center">
+                   <button class="btn btn-success">Click me</button>
+                   <button class="btn btn-danger">Remove me</button>
+               </div>
+           </div>
+        </div>
+
+        <div class="col-8">
+<!--            alert-danger, alert-primary ....-->
+            <div class="alert alert-success">Mufaqqiyatli ro'yxatdan o'tdingiz!</div>
+            <div class="alert alert-danger">Mufaqqiyatli ro'yxatdan o'tdingiz!</div>
+            <div class="alert alert-danger alert-dismissible fade show">Xatolik parol yoki login noto'g'ri kiritilgan<button type="button" class="close" data-dismiss="alert">&times;</button></div>
+
+            <button class="btn btn-success">Add me</button>
+            <button class="btn btn-danger">Add me</button>
+
+            <button class="btn btn-outline-success">Add me</button>
+            <button class="btn btn-outline-primary">Add me</button>
+
+            <button class="btn btn-outline-warning  mt-3 btn-block">Add me</button>
+
+<!--            inline elementni blockga o'tkazish d-block-->
+            <button class="btn btn-outline-secondary mt-3 d-block mx-auto">Add me</button>
+
+            <span class="badge badge-primary">123</span>
+            <span class="badge badge-pill badge-danger">123</span>
+
+            <ul class="list-group mt-3">
+                <li class="list-group-item active">First item</li>
+                <li class="list-group-item">Second item</li>
+                <li class="list-group-item ">Third item</li>
+            </ul>
+
+            <div class="list-group mt-3">
+                <a href="#" class="list-group-item list-group-item-action">First item</a>
+                <a href="#" class="list-group-item list-group-item-action">Second item</a>
+                <a href="#" class="list-group-item list-group-item-action">Third item</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 ">
+                <ul class="nav ">
+                    <!-- nav-justified==joy ochib beradi -->
+                    <!-- flex-column  -->
+                    <!-- offest-4 -->
+                    <li class="nav-item"><a href="#" class="nav-link">Link 1</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 2</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link">Link 3</a> </li>
+                    <li class="nav-item"><a href="#" class="nav-link ">Link 4</a> </li>
+                </ul>
+
+                <ul class="nav nav-pills mt-3">
+                    <li class="nav-item"><a href="" class="nav-link active">Bosh Sahifa</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Yangiliklar</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Tech</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">Biz haqimizda</a></li>
+                </ul>
+
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu1">Menu 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#menu2">Menu 2</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane container active" id="home">
+                        <h1>Home</h1>
+                    </div>
+                    <div class="tab-pane container fade" id="menu1">
+                        <h1>Menu 1</h1>
+                    </div>
+                    <div class="tab-pane container fade" id="menu2">
+                        <h1>Menu 2</h1>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown">
+                        Dropdown button
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Link 1</a></li>
+                        <li><a class="dropdown-item" href="#">Link 2</a></li>
+                        <li><a class="dropdown-item" href="#">Link 3</a></li>
+                        <li> <a>
+                                <hr class="dropdown-divider" href="#">
+                                </hr>Boshqa link
+                            </a></li>
+                    </ul>
+                </div>
+
+
+
+
+                <button type="button" class="btn btn-primary d-block mt-3 " data-torggle="collapse"
+                    data-torget="#collapse">Collapse</button>
+                <div id="collapse" class="collapse">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+
+                <div>
+                    <div id="accordion">
+                        <div class="card mt-3">
+                            <div class="card-header">
+                                <a class="text-decoration-none d-block " data-bs-toggle="collapse"
+                                    href="#collapse1">Birinchi
+                                    ma`lumot</a>
+                            </div>
+                            <div id="collapse1" class="collapse show" data-bs-parent="#accordion">
+                                <div class="card-bady p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card ">
+                            <div class="card-header">
+                                <a class="text-decoration-none d-block" data-bs-toggle="collapse"
+                                    href="#collapse2">Ikkinchi
+                                    ma`lumot</a>
+                            </div>
+                            <div id="collapse2" class="collapse " data-bs-parent="#accordion">
+                                <div class="card-bady p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <a class="text-decoration-none d-block" data-bs-toggle="collapse"
+                                    href="#collapse3">Uchinchi
+                                    ma`lumot</a>
+                            </div>
+                            <div id="collapse3" class="collapse " data-bs-parent="#accordion">
+                                <div class="card-bady p-3">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress mt-3" style="height: 20px;">
+                        <div class="progress-bar" style="width: 30%;">30%</div>
+                        <div class="progress-bar bg-danger" style="width: 20%;">20%</div>
+                        <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+                    </div>
+                    <div class="progress mt-3" >
+                        <div class="progress-bar" style="width: 30%;">30%</div>
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width: 20%;">20%</div>
+                        <div class="progress-bar bg-success" style="width: 50%;">50%</div>
+                    </div>
+                </div>
+                <ul class="pagination mt-3">
+                    <li class="page-item"><a href="" class="page-link">Prev</a></li>
+                    <li class="page-item"><a href="" class="page-link">1</a></li>
+                    <li class="page-item"><a href="" class="page-link">2</a></li>
+                    <li class="page-item"><a href="" class="page-link">3</a></li>
+                    <li class="page-item"><a href="" class="page-link">Next</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

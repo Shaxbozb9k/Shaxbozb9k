@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 17 bootstrap</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Foydalanuvchi haqida ma`limot</h1>
+                <form>
+                    <div class="input-group">
+                        <span class="input-group-text">@</span>
+                        <input type="text" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <span class="input-group-text">@example.com</span>
+                        <input type="text" class="form-control" placeholder="Your Email">
+
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+
+                    <div class="input-group mt-2">
+                        <input type="text" class="form-control" placeholder="Your Email">
+                        <span class="input-group-text">@example.com</span>
+                    </div>
+
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label for="customCheck" class="custom-control-label">Buni tekshiring</label>
+                    </div>
+
+                    <div class="form-control form-switch mt-3">
+                        <input type="checkbox" class="form-check-input" id="switch" name="darkmode" value="yes" checked>
+                        <label for="switch" class="form-check-label">Buni yoqing</label>
+                    </div>
+                    <div class="custom-file mt-3">
+                        <input type="file" class="custom-file-input" id="customFile">
+                        <label for="customFile" class="custom-file-label">Kirit Hujatini tezroq!!!</label>
+                    </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Hooray!">Hover</a>
+                    <button type="button" data-bs-toggle="tooltip" title="Hooray!">Hover over me!</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="popover" title="Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Aliquam veniam iusto fuga culpa similique. Molestiae sapiente
+                    deserunt voluptates iusto iste expedita possimus saepe repudiandae suscipit adipisci, explicabo
+                    perferendis quisquam atque.Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Aliquam veniam iusto fuga culpa similique. Molestiae sapiente
+                    deserunt voluptates iusto iste expedita possimus saepe repudiandae suscipit adipisci, explicabo
+                    perferendis quisquam atque.
+                    " data-bs-content="">Toggle popover</button>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script>
+        // Add the following code if you want the name of the file appear on select
+        $(".custom-file-input").on("change", function () {
+            var fileName = $(this).val().split("\\").pop();
+            $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+        });
+    </script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+        var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.14.3/dist/js/uikit-icons.min.js"></script>
+    <script>			// Сценарий на JavaScript
+
+        // Определение функции для отображения текущего времени 
+        function displayMonth() {
+            var element = document.getElementById("month"); // Найти элемент с id="clock" 
+            var now = new Date();	// Получить текущее время
+            data.getDay(now);
+            element.innerHTML = now.toLocaleDateString(); // Отобразить его 
+            element.innerHTML = now.toLocaleTimeString(); // Отобразить его 
+            setTimeout(displayMonth, 1000);	// Вызвать снова через 5 сек
+        }
+        
+        window.onload = displayMonth; // Начать отображение времени после загрузки документа
+        
+        </script>
+        
+        <style>				/* Таблица стилей CSS для часов */
+        #clock {				/* Стили применяются к элементу с id="clock" */
+           
+            font: bold 18pt sans; 		/* Использовать большой полужирный шрифт */ 
+            background: #ddf;			/* Светлый, голубовато-серый фон */
+            padding: 10px;				/* Отступы вокруг */
+            border: solid black 2px; 		/* И сплошная черная рамка */ 
+            border-radius: 10px; 			/* Закругленные углы (если поддерживаются) */
+        }
+        </style>
+        </head>
+        
+        <body>				 <!--Тело - отображаемая часть документа -->
+       <h1>Цифровые часы</h1> <!-- Вывести заголовок-->
+        
+        <span id="month"></span>  <!--Время выводится здесь -->
+        
+</head>
+
+<body>
+
+
+
+<script src="main.js"></script>
+</body>
+
+</html>

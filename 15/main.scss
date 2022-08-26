@@ -1,0 +1,108 @@
+// **************************************************************** FONTS STYLE *********************************************************************************
+@font-face {
+    font-family: "Inter Black";
+    src: url("../assets/fonts/Inter/Inter-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Bold";
+    src: url("../assets/fonts/Inter/Inter-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter ExtraBold";
+    src: url("../assets/fonts/Inter/Inter-ExtraBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter ExtraLight";
+    src: url("../assets/fonts/Inter/Inter-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Light";
+    src: url("../assets/fonts/Inter/Inter-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Medium";
+    src: url("../assets/fonts/Inter/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("../assets/fonts/Inter/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Semibold";
+    src: url("../assets/fonts/Inter/Inter-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Inter Thin";
+    src: url("../assets/fonts/Inter/Inter-Thin.ttf") format("truetype");
+}
+
+// color
+$color-yellow: #F1B3D1;
+$color-purple: #A800A7;
+$color-black: #222124;
+$color-orange: #E76A06;
+$color-text: #A6A6A8;
+$color-grey: #F5F5F5;
+
+
+html {
+    font-size: 16px;
+    overflow-x: hidden;
+
+    .top {
+        background-image: lenear-gredient(to right, white 60%, $color-purple 40%);
+
+        @media (max-wigth:576px) {
+            background-image: lenear-gredient(to bottom, white 35%, $color-purple 1%);
+        }
+    }
+
+    .navbar {
+        .col-60 {
+            width: 60%;
+        }
+
+
+        .col-40 {
+            width: 40%;
+
+            @media (max-wigth:767px) {
+                width: 100%;
+            }
+
+            .icon-bucket {
+                height: 21px;
+            }
+
+            .icon {
+                margin-right: 19px;
+
+                @media (max-wigth:992px) {
+                    margin-right: 12px;
+                }
+            }
+
+            p {
+                font-size: 12px;
+                line-height: 30px;
+
+                @media (max-wigth:1200px) {
+                    font-size: 10px;
+                    line-height: 25px;
+                }
+                @media (max-wigth:767px) {
+                    color: $color-black!important;
+                    
+                }
+            }
+        }
+    }
+}

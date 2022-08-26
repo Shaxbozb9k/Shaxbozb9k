@@ -1,0 +1,23 @@
+ textarea,input:focus {
+    border: 1px solid blue ;
+    outline: none;
+    box-shadow: 0 0 3px 1px aqua;
+}
+
+div {
+    margin-top: 10px;
+}
+
+span {
+    color: red;
+}
+
+#input7 {
+    display: none;
+}
+
+.document {
+padding: 10px 40px;
+    background-color: aqua;
+    border-radius: 40px;
+}

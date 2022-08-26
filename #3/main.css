@@ -1,0 +1,100 @@
+.container{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.card{
+    width: 30%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+    margin-top: 50px;
+    box-shadow: 0 0 10px 5px darkgray;
+}
+
+
+
+.card img{
+    width: 100%;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .card{
+        width: 100%;
+    }
+    body{
+        background-color: #F76F40;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 992px) {
+    .card{
+        width: 45%;
+        background-color: lime;
+    }
+    body{
+        background-color: black;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .card{
+        width: 32%;
+        background-color: rebeccapurple;
+    }
+    body{
+        background-color: yellow;
+    }
+}
+
+/*Yuqoridagi Responsive Design qilishni ikkinchi usuli*/
+
+/*Netbook gacha yoki shu oraliqdagi istalgan qurilma Dizayni*/
+@media (max-width: 1200px) {
+    /*992px dan 1200 px gacha*/
+}
+
+/*Planshet Design*/
+@media (max-width: 992px) {
+    /*767px dan 992 px gacha*/
+}
+
+/*SmartPhone Design*/
+@media (max-width: 767px) {
+    /*576px dan gacha 767px*/
+}
+
+/*Oddiy Telfon Design*/
+@media (max-width: 576px) {
+    /*0 dan 576 px gacha*/
+}
+
+.video{
+    position: relative;
+}
+
+.cover{
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 99.5%;
+    /*Rangi sifatini 50% i ni ko'rsatish*/
+    /*opacity transparentni ukasi*/
+    opacity: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: lime;
+}
+
+video{
+    /*viewport width ==> ekranni eni bo'yicha 97.5 qismini egallasini*/
+    width: 97.5vw;
+    height: 105%;
+}

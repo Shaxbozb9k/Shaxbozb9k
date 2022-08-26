@@ -1,0 +1,170 @@
+/*************Pseude Class**********/
+.havola:active{
+
+    background-color: blue;
+    font-size: 25px;
+}
+/*active ==> element ustiga bosib turilganda ishlaydi*/
+
+.havola:visited{
+    color: lime;
+}
+
+/*visted ==> shu linkga olib kirilganda ishlaydi*/
+
+.havola:focus{
+    color: coral;
+    font-size: 35px;
+}
+
+/*:focus element ustiga bir marta bosganda ishlaydi*/
+
+.havola:hover{
+    font-size: 45px;
+    color: aqua;
+}
+
+/*:hover element ustiga sichqonchani olib borilganda ishlaydi   */
+
+/*********Pseude element********/
+
+.havola:first-child:hover{
+    font-size: 45px;
+    background-color: blue;
+}
+
+/*first-child ==> birinchi bolasi degani ya'ni bir xil */
+/*nomli elementlardan birinchisiga ta'sir qiladi*/
+
+.havola:last-child:hover{
+    font-size: 45px;
+    background-color: aqua;
+    color: black;
+}
+/*last-child ==> oxirgi bolasi degani ya'ni bir xil */
+/*nomli elementlardan xirgisiga ta'sir qiladi*/
+
+.havola:nth-child(3):focus{
+    background-color: lime;
+    color: lightgrey;
+    font-size: 29px;
+}
+/*bu 3 chi bolasi degani*/
+
+.havola:nth-child(even){
+    color: red;
+    background-color: black;
+}
+/*even - faqat juft bolalari degani*/
+
+
+.havola:nth-child(odd){
+    color: deeppink;
+    background-color: aquamarine;
+}
+
+/*odd - toq bolalariga ta'sir qiladi*/
+
+/*element oxiridan qo'shimcha elemnt qo'shish uchun*/
+.text:after{
+    content: 'Bu after degani';
+}
+
+/*element boshidan qo'shimcha element qo'shish uchun before*/
+.text:before{
+    content: 'BU before degani ';
+}
+
+.text:first-line{
+    font-size: 25px;
+    color: coral;
+}
+/*BU matnni birinchi qatoriga ta'sir qiladi*/
+
+.text:first-letter{
+    background-color: aqua;
+    font-size: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.text{
+    user-select: none;
+    /*BU tekstni ko'chirib olishni yo'q qiladi*/
+}
+
+.card{
+    width: 30%;
+    background-color: aqua;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.card::after{
+    content: '';
+    border: 16px solid aqua;
+    position: absolute;
+    left: 25px;
+    bottom: -32px;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+.card:hover{
+    box-shadow: 0 0 6px 3px deeppink;
+}
+.cart2{
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: aqua;
+    position: relative;
+}
+.cart2 img{
+    width: 100%;
+}
+
+.yorliq{
+    background-color: orangered;
+    color: #ffffff;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    position: absolute;
+    right: -15px;
+}
+
+.cart2::after{
+    content: "";
+    border: 12px solid orangered;
+    position: absolute;
+    right: -24px;
+    top: 30px;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+/*Alohida element belgilanganda ta'sir qiladi*/
+.card::selection{
+    background-color: yellow;
+    color: blue;
+}
+
+
+/*bodydagi hamma tekstni belgilaganda ta'sir qiladi*/
+::selection{
+    background-color: coral;
+    color: lightblue;
+}
+
+.cart2:hover{
+    box-shadow: 0 0 6px 3px lightgrey;
+    transform: scale(1.2);
+}
