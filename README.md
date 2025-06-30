@@ -23,6 +23,6 @@
 ---
 
 ### 📫 Contact me:
-- Telegram: [@Shaxbozb9k](https://t.me/Shaxbozb9kdev)
+- Telegram: [@mychannel](https://t.me/Shaxbozb9k_Dev)
 - Email: shaxbozb9k@yandex.ru
 
